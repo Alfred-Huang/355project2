@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uni Nail Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="./css/appointment.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <nav class="navigation-bar sticky">
+        <div class="navigation-section">
+            <div id="company-name">Uni Nail Salon</div>
+            <div id="overview"><a href="/">Overview</a></div>
+            <div id="products"><a href="appointment.html">Appointment</a></div>
+            <div id="support"><a href="service.html">Service</a></div>
+            <div id="questions"><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <div class="calender-section">
+        <div class="calendar"></div>
+    </div>
+
+    <div class="appointment-section">
+        <div class="appointment-container">
+            <form id="form" class="appointment-form">
+                <div class="input-container">
+                    <input id="lastName" class="input non-outline" type="text" placeholder="Last Name" required>
+                    <input id="firstName" class="input non-outline" type="text" placeholder="First Name" required>
+                    <input id="phoneNumber" class="input non-outline" type="text" placeholder="Phone number" required>
+                    <div class="time-input">
+                        <label for="appt">Choose a time for your appointment:</label>
+                        <input class="input non-outline" type="time" id="appt" name="appointmentTime"
+                               min="09:00" max="18:00" required>
+                        <small>Office hours are 9am to 6pm</small>
+                    </div>
+                    <input id="date" class="input non-outline" type="date" placeholder="Date" required>
+                    <input id="service" class="input non-outline" type="text" placeholder="Service" required>
+                    <button type="button" class="submit-button">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <hr class="footer-divide-line">
+        <div id="author">
+            <p>By Zhicheng Huang</p>
+        </div>
+    </footer>
+    <div id="toasts"></div>
+</div>
+<script src="js/appointment.js"></script>
+</body>
+</html>

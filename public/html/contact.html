@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uni Nail Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="./css/contact.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <nav class="navigation-bar sticky">
+        <div class="navigation-section">
+            <div id="company-name">Uni Nail Salon</div>
+            <div id="overview"><a href="/">Overview</a></div>
+            <div id="products"><a href="appointment.html">Appointment</a></div>
+            <div id="support"><a href="service.html">Service</a></div>
+            <div id="questions"><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Contact number: 888-888-8888</p>
+                <p>Address: 1-01 1AVE, Manhattan, New York</p>
+            </div>
+            <div class="feedback-form">
+                <form id="form" class="feedback-form" >
+                    <div class="input-container">
+                        <input id="lastName" name="lastName" class="input non-outline lastNameInput" type="text" placeholder="Last Name" required>
+                        <input id="firstName" name="firstName" class="input non-outline firstNameInput" type="text" placeholder="First Name" required>
+                        <textarea id="feedback" name="feedback" class="text-input non-outline feedBackInput" type="text-area" placeholder="Feedback" required></textarea>
+                        <button type="button" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr class="footer-divide-line">
+        <div id="author">
+            <p>By Zhicheng Huang</p>
+        </div>
+    </footer>
+</div>
+<script src="js/contact.js"></script>
+</body>
+</html>

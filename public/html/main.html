@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uni Nail Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <nav class="navigation-bar sticky">
+        <div class="navigation-section">
+            <div id="company-name">Uni Nail Salon</div>
+            <div id="overview"><a href="/">Overview</a></div>
+            <div id="products"><a href="html/appointment.html">Appointment</a></div>
+            <div id="support"><a href="html/service.html">Service</a></div>
+            <div id="questions"><a href="html/contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <section class="intro-info">
+        <div class="intro-info-content">
+            <img src="./images/background-intro-image.webp" height="100%" width="100%" style="opacity: 40%; z-index: -1; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+            <div class="intro-info-content-slogan">
+                <p class="intro-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section">
+        <div class="counter-container">
+            <div class="counter" data-target="1000"></div>
+            <span class="counter-title">Nail design</span>
+
+            <div class="counter" data-target="500"></div>
+            <span class="counter-title">Colors</span>
+
+            <div class="counter" data-target="20"></div>
+            <span class="counter-title">Spa</span>
+
+            <div class="counter" data-target="0"></div>
+            <span class="counter-title">Complain</span>
+        </div>
+    </section>
+
+    <section class="color-section">
+        <div class="color-section-container">
+            <div class="color-display">
+               <div class="first-row-color"></div>
+                <div class="second-row-color"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="image-section">
+        <div class="image-section-container">
+            <div class="carousel">
+                <div class="carousel">
+                    <div class="image-container" id="nail-imgs">
+                        <img src="./images/nail-images/nail1.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail2.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail3.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail4.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail5.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail6.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                        <img src="./images/nail-images/nail7.jpg"
+                             alt="first-image"
+                             class="nail"
+                        />
+                    </div>
+
+                    <div class="buttons-container">
+                        <button id="left" class="btn">Prev</button>
+                        <button id="right" class="btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-section">
+        <div class="slider-container">
+            <div class="left-slide">
+                <div style="background-image: url('./images/silder-image/nail-polish/e603.png')"></div>
+                <div style="background-image: url('./images/silder-image/nail-polish/opi89.jpg')"></div>
+                <div style="background-image: url('./images/silder-image/nail-polish/chanel945.jpg')"></div>
+                <div style="background-image: url('./images/silder-image/nail-polish/dior.jpg')"></div>
+            </div>
+            <div class="right-slide">
+                <div style="background-image: url('./images/silder-image/hand/dior-hand.jpg')"></div>
+                <div style="background-image: url('./images/silder-image/hand/chanel9-hand.jpg')"></div>
+                <div style="background-image: url('./images/silder-image/hand/opi83-hand.jpg')"></div>
+                <div style="background-image: url('./images/silder-image/hand/essie603.jpg')"></div>
+            </div>
+            <div class="action-buttons">
+                <button class="down-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="up-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <hr class="footer-divide-line">
+        <div id="author">
+            <p>By Zhicheng Huang</p>
+        </div>
+    </footer>
+</div>
+<script src="data/colorData.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+:root {
+    --info-font-family-base: Georgia;
+    --line-height: 28px;
+    --title-font-size: 24px;
+    --acitivity-box-width: 350px;
+    --acitivity-text-color: #a2a2a2;
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+    --text-color: #a2a2a2;
+    --global-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    --calendar-bg-color: #fcfcfc;
+    --calendar-font-color: #000000;
+    --weekdays-border-bottom-color: #b0b0b0;
+    --calendar-date-hover-color: #5f5f5f;
+    --calendar-current-date-color: #fcfcfc;
+    --calendar-today-color: linear-gradient(to bottom, #989898, #989898);
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color : #000000;
+    --calendar-border-radius: 16px;
+    --calendar-prevnext-date-color: #484848;
+}
+
+/* Container*/
+.container{
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+        'navigation-bar'
+        'contact-section'
+        'footer';
+}
+
+/* Navigation section */
+.navigation-bar{
+    grid-area: navigation-bar;
+    border-bottom: 1px gray solid;
+    gap: 10vw ;
+    height: 60px;
+}
+
+.navigation-content{
+    margin-left: 40px;
+}
+
+.sticky {
+    top:0;
+    border-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
+.navigation-bar a{
+    text-decoration: none;
+    color: #a5a5a5;
+}
+
+.navigation-section{
+    font-size: 28px;
+    display: flex;
+    gap: 15vw;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+#company-name{
+    width: 150px;
+    font-size: 24px;
+}
+
+/*----------------contact section-----------------*/
+.contact-section{
+    grid-area: contact-section;
+    height: 1200px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-container{
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-container p{
+    font-size: 60px;
+    font-family: Roboto, monospace;
+}
+
+.feedback-form{
+    display: flex;
+    justify-content: center;
+}
+
+.input-container{
+    width: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input{
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 28px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.text-input{
+    width: 800px;
+    height: 300px;
+    font-size: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+}
+
+.non-outline:focus{
+    outline: none;
+}
+
+.submit-button{
+   background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    width: 80px;
+    height: 50px;
+
+}
+
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 100px;
+}
+
+.footer-divide-line{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+#author{
+    font-size: 30px;
+    text-align: center;
+}
